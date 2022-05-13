@@ -140,7 +140,6 @@ body {
 }
     
 .grid__hijo {
-    border: 10px solid green;
     padding: 0;
     text-align: center;
     width: 500px;
@@ -238,22 +237,36 @@ body {
     .Inicio__texto {
         font-size: 20px;
     }
-    .Inicio__Imagen {
-        height: 300px;
-        width: 300px;
-      
 
     }
 
     .grid {
-        height: 100vh;
+        /* height: 100vh; */
+        grid-template-areas:
+        "ele1"
+        "ele2"
+        "ele3"
+        "ele4"
         
         
     }
     .grid__hijo {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
     .div__imagen {
         padding: 0px;
-}
+        height: 300px;
+        width: 300px;
+    }
+    .div {
+        height: 300px;
+        width: 300px;
+    }
+    .macetas {
+        font-size: 20px;
+    }
+    .transform-translate {
+        height: 200px;
+        width: 200px;
+    }
