@@ -1,0 +1,40 @@
+.Inicio {
+    display: flex;
+    height: 1000px;
+    width: 100%;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: palegreen;
+
+    &__titulo {
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: $Color-Letra;
+    
+    }
+    
+    &__imagen {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 20px;
+       
+        
+    }
+    
+    &__texto {
+        font-size: 25px;
+        color: $Color-Letra;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    
+    }
+    
+}
+
+

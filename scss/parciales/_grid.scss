@@ -1,0 +1,40 @@
+.grid {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "ele1 ele2"
+    "ele3 ele4";
+    justify-items: center;
+    align-items: center;
+
+    &__hijo {
+        padding: 0;
+        text-align: center;
+        width: 500px;
+        height: 500px;
+        
+
+    }
+    &__imagen {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    
+    }
+    &__hijo--1 {
+        grid-area: ele1;
+    }
+    &__hijo--2 {
+        grid-area: ele2;
+    }
+    
+    &__hijo--3 {
+        grid-area: ele3;
+    }
+    &__hijo--4 {
+        grid-area: ele4;
+     }
+}
+    
