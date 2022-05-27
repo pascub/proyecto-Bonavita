@@ -1,0 +1,63 @@
+
+$redes: (
+instagram:#ffffff,
+facebook: red  
+);
+@each $clave, $valor in $redes {
+    .btn-#{$clave} {
+        color:$valor
+    }
+    
+}
+$estilos: (
+color: orange,
+centro:center,
+tFuente: 35px,
+padding: 1rem,
+);
+div {
+    background-color: map-get($estilos, color);
+    text-align:map-get($estilos, centro);
+    padding:  map-get($estilos, padding);
+    font-size:  map-get($estilos, tFuente);
+}
+.renzo {
+    background-color: map-get($estilos, color);
+
+}
+.boton {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.boton--aceptar{
+    @extend .boton;
+    background-color: green;
+    color: yellow;
+}
+.boton--cancelar{
+    @extend .boton;
+    background-color: red;
+    color: yellow;
+}
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+.box--small {
+    @include sizes (100px, 100px);
+    background-color:red;
+}
+.box--medium {
+    @include sizes (250px, 250px);
+    background-color:pink;
+}
+.box--big{
+    @include sizes (500px, 500px);
+    background-color:orange;
+}
